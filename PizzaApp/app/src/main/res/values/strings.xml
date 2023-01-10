@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PizzaApp</string>
+    <string name="ny_title">New York Style Pizza</string>
+    <string name="chicago_title">Chicago Style Pizza</string>
+    <string name="current_title">Current Order</string>
+    <string name="store_orders_title">Store Orders</string>
+    <string name="no_selection">No Topping Selected</string>
+    <string name="too_many">Can\'t add more than 7 toppings!</string>
+    <string name="store">STORE</string>
+    <string name="ok">Aight Bet!</string>
+    <string name="cancelled_title">Order Cancelled</string>
+    <string name="cancelled_msg">The individual order has been cancelled from the store!</string>
+    <string name="pizza_title">Pizza Added</string>
+    <string name="pizza_msg">Pizza successfully added to order!</string>
+</resources>

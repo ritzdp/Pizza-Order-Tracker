@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rupizzeria.ChicagoOrderingController">
+   <children>
+      <Text fill="RED" layoutX="165.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chicago Style Pizza">
+         <font>
+            <Font name="Andalus" size="24.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="flavorBox" layoutX="36.0" layoutY="107.0" onAction="#onFlavorClick" prefHeight="25.0" prefWidth="199.0" promptText="Select a Flavor" />
+      <RadioButton layoutX="38.0" layoutY="154.0" mnemonicParsing="false" onAction="#onSizeClick" selected="true" text="Small">
+         <toggleGroup>
+            <ToggleGroup fx:id="sizeToggles" />
+         </toggleGroup></RadioButton>
+      <RadioButton layoutX="103.0" layoutY="154.0" mnemonicParsing="false" onAction="#onSizeClick" text="Medium" toggleGroup="$sizeToggles" />
+      <RadioButton layoutX="182.0" layoutY="154.0" mnemonicParsing="false" onAction="#onSizeClick" text="Large" toggleGroup="$sizeToggles" />
+      <Label layoutX="36.0" layoutY="204.0" text="Crust" />
+      <TextField fx:id="crust" editable="false" layoutX="70.0" layoutY="200.0" />
+      <Label layoutX="37.0" layoutY="254.0" text="Available Toppings" />
+      <ListView fx:id="available" layoutX="34.0" layoutY="274.0" prefHeight="205.0" prefWidth="199.0" />
+      <Label layoutX="318.0" layoutY="254.0" text="Selected Toppings" />
+      <ListView fx:id="selected" layoutX="316.0" layoutY="274.0" prefHeight="205.0" prefWidth="199.0" />
+      <ImageView fx:id="image" fitHeight="142.0" fitWidth="236.0" layoutX="281.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/chicagoBYO.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="selectBtn" layoutX="259.0" layoutY="334.0" mnemonicParsing="false" onAction="#onSelectToppingClick" text="&gt;&gt;" />
+      <Button fx:id="deselectBtn" layoutX="259.0" layoutY="393.0" mnemonicParsing="false" onAction="#onDeselectToppingClick" text="&lt;&lt;" />
+      <Label layoutX="34.0" layoutY="503.0" text="Pizza Price ($)" />
+      <TextField fx:id="price" editable="false" layoutX="117.0" layoutY="499.0" prefHeight="25.0" prefWidth="117.0" />
+      <Button layoutX="316.0" layoutY="499.0" mnemonicParsing="false" onAction="#onAddOrderClick" prefHeight="25.0" prefWidth="199.0" text="Add to Order" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/chicagoBtn"
+        android:layout_width="290dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/chicago_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/NYBtn"
+        android:layout_width="290dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginStart="60dp"
+        android:text="@string/ny_title"
+        app:layout_constraintTop_toBottomOf="@+id/chicagoBtn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/currentBtn"
+        android:layout_width="290dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginStart="60dp"
+        android:text="@string/current_title"
+        app:layout_constraintTop_toBottomOf="@+id/NYBtn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/storeBtn"
+        android:layout_width="290dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginStart="60dp"
+        android:text="@string/store_orders_title"
+        app:layout_constraintTop_toBottomOf="@+id/currentBtn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
